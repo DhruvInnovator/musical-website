@@ -40,14 +40,14 @@ function FeaturedCourses() {
                 <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
                   <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow">
                     <li>
-                    <p className="text-lg sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">{course.title}</p>
-                    <p className="text-sm text-neutral-600 dark:text-neutral-400 flex-grow">{course.description}</p>
-                    <p className="text-purple-500">Price: ${course.price}</p>
-                    <p className="text-purple-600">Instructor: {course.instructor}</p>
+                      <p className="text-lg sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">{course.title}</p>
+                      <p className="text-sm text-neutral-600 dark:text-neutral-400 flex-grow">{course.description}</p>
+                      <p className="text-purple-500">Price: ${course.price}</p>
+                      <p className="text-purple-600">Instructor: {course.instructor}</p>
                     </li>
                     
-                    <button className="border items-center text-sm text-center text-md rounded-full">
-                    <Link href={`/course/${course.slug}`} className="text-purple-700">
+                    <button className="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded-2xl mt-8">
+                    <Link href={`/course/${course.slug}`} className="text-purple-700 ">
                       Learn More
                     </Link>
                     </button>
@@ -57,9 +57,7 @@ function FeaturedCourses() {
               </div>
             ))}
           </div>
-        </div>
-        
-        
+        </div>        
         <div className="mt-20 text-center">
         <Link href={"/courses"}
             className="px-4 py-4 rounded-full border text-md border-neutral-600 text-white bg-purple-800 hover:bg-black  transition duration-200"
