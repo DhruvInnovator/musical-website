@@ -67,7 +67,7 @@
         "description": "Learn the essentials of songwriting to express your musical creativity.",
         "price": 159.99,
         "instructor": "Samantha Miller",
-        "isFeatured": true,
+        "isFeatured": false,
         "image": "/courses/song-writing.jpg"
       },
       {
@@ -77,7 +77,7 @@
         "description": "Create compelling electronic music with our course designed for beginners to advanced users.",
         "price": 169.99,
         "instructor": "Luke Harris",
-        "isFeatured": true,
+        "isFeatured": false,
         "image": "/courses/music-prod.jpg"
       },
       {
@@ -87,7 +87,7 @@
         "description": "Explore the rich history of classical music from its origins to the present day.",
         "price": 179.99,
         "instructor": "Grace Lee",
-        "isFeatured": true,
+        "isFeatured": false,
         "image": "/courses/classical-music.jpg"
       },
       {
