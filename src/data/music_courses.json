@@ -47,7 +47,7 @@
         "description": "Learn the art of jazz improvisation with this course designed for all levels.",
         "price": 139.99,
         "instructor": "Chris Davis",
-        "isFeatured": true,
+        "isFeatured": false,
         "image": "/courses/jazz.jpg"
       },
       {
@@ -87,7 +87,7 @@
         "description": "Explore the rich history of classical music from its origins to the present day.",
         "price": 179.99,
         "instructor": "Grace Lee",
-        "isFeatured": false,
+        "isFeatured": true,
         "image": "/courses/classical-music.jpg"
       },
       {

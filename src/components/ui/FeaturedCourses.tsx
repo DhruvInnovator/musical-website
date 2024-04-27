@@ -45,7 +45,7 @@ function FeaturedCourses() {
                   <p className="text-purple-500">Price: ${course.price}</p>
                   <p className="text-purple-600">Instructor: {course.instructor}</p>
                   <Link href={`/course/${course.slug}`} className="text-purple-700 mt-4">
-                    <button className="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded-2xl text-sm">
+                    <button className="bg-black hover:bg-purple-900 text-white font-bold py-2 px-4 rounded-2xl text-sm">
                       Learn More
                     </button>
                   </Link>
@@ -58,7 +58,7 @@ function FeaturedCourses() {
 
       <div className="mt-8  w-ful; flex justify-center items-center">
         <Link href="/courses" className="mb-8">
-          <HoverBorderGradient>
+          <HoverBorderGradient className="text-purple-500">
             View All courses
           </HoverBorderGradient>
         </Link>
