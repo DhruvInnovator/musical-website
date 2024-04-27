@@ -8,6 +8,7 @@ import {
   IconMusic,
   IconPiano,
 } from "@tabler/icons-react";
+import Image from 'next/image';
 
 function AboutPage() {
   return (
@@ -17,7 +18,13 @@ function AboutPage() {
           key={i}
           title={<span className="text-purple-600 font-sans text-3xl">{item.title}</span>}
           description={<span className="text-purple-400">{item.description}</span>}
-          header={i === 0 ? <div className="w-full h-[400px] overflow-hidden"><img src="/Assets/Classical.jpg" alt="Classical" className="object-cover w-full h-full" style={{ objectFit: 'cover', objectPosition: '50% 50%', width: '100%', height: '100%' }} /></div> : <Skeleton />}
+          header={i === 0 ? (
+            <div className="w-full h-80 md:h-[400px] relative"> {/* Adjusted height for mobile and larger screens */}
+              <Image src="/Assets/Classical.jpg" alt="Classical" layout="fill" objectFit="cover" />
+            </div>
+          ) : (
+            <Skeleton />
+          )}
           icon={item.icon}
           className={`md:col-span-${i === 3 || i === 6 ? '2' : '1'} px-4`}
         />
