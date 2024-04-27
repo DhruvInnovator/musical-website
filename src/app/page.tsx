@@ -1,3 +1,4 @@
+import AboutPAge from "@/components/AboutPage";
 import HeroSection from "@/components/HeroSection";
 import FeaturedCourses from "@/components/ui/FeaturedCourses";
 
@@ -8,6 +9,7 @@ export default function Home() {
     
     <HeroSection />
     <FeaturedCourses />
+    <AboutPAge />
   
     
   </main>
