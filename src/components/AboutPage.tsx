@@ -8,28 +8,22 @@ import {
   IconMusic,
   IconPiano,
 } from "@tabler/icons-react";
-import Image from 'next/image';
+
 
 function AboutPage() {
   return (
     <BentoGrid className="mt-8 max-w-7xl mx-auto">
       {items.map((item, i) => (
-        <BentoGridItem 
-          key={i}
-          title={<span className="text-purple-600 font-sans text-3xl">{item.title}</span>}
-          description={<span className="text-purple-400">{item.description}</span>}
-          header={i === 0 ? (
-            <div className="w-full h-80 md:h-[400px] relative"> {/* Adjusted height for mobile and larger screens */}
-              <Image src="/Assets/Classical.jpg" alt="Classical" layout="fill" objectFit="cover" />
-            </div>
-          ) : (
-            <Skeleton />
-          )}
-          icon={item.icon}
-          className={`md:col-span-${i === 3 || i === 6 ? '2' : '1'} px-4`}
-        />
-      ))}
-    </BentoGrid>
+        <BentoGridItem
+        key={i}
+        title={<span className="text-purple-600 font-sans text-3xl">{item.title}</span>}
+        description={<span className="text-purple-400">{item.description}</span>}
+        header={item.header}
+        icon={item.icon}
+        className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+      />
+    ))}
+  </BentoGrid>
   );
 }
 
@@ -43,36 +37,43 @@ const items = [
     title: "Explore Musical Instruments",
     description: "Discover the world of music by learning to play various instruments like guitar, piano, drums, and more.",
     icon: <IconGuitarPick className="h-4 w-4 text-neutral-500" />,
+     header: <Skeleton />,
   },
   {
     title: "Develop Your Musical Skills",
     description: "Enhance your musical abilities through comprehensive lessons tailored to your skill level and interests.",
     icon: <IconMusic className="h-4 w-4 text-neutral-500" />,
+     header: <Skeleton />,
   },
   {
     title: "Experience Ensemble Playing",
     description: "Join ensemble groups to collaborate with other musicians, develop teamwork, and perform together.",
     icon: <IconMan className="h-4 w-4 text-neutral-500" />,
+     header: <Skeleton />,
   },
   {
     title: "Learn Music Theory",
     description: "Gain a deeper understanding of music through lessons in music theory, harmony, and composition.",
     icon: <IconPiano className="h-4 w-4 text-neutral-500" />,
+     header: <Skeleton />,
   },
   {
     title: "Discover Different Music Styles",
     description: "Explore various music genres such as classical, jazz, blues, and contemporary to broaden your musical horizons.",
     icon: <IconMicrophone className="h-4 w-4 text-neutral-500" />,
+     header: <Skeleton />,
   },
   {
     title: "Participate in Live Performances",
     description: "Showcase your talents and progress through regular recitals, concerts, and performance opportunities.",
     icon: <IconCalendarEvent className="h-4 w-4 text-neutral-500" />,
+    header: <Skeleton />,
   },
   {
     title: "Connect with Music Enthusiasts",
     description: "Join a vibrant community of music lovers and enthusiasts who share your passion for music.",
     icon: <IconMan className="h-4 w-4 text-neutral-500" />,
+     header: <Skeleton />,
   },
 ];
 
