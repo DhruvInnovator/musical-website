@@ -32,14 +32,14 @@ function FeaturedCourses() {
         </div>
       </div>
 
-      <div className="mt-8 sm:mt-12 lg:mt-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+      <div className="mt-8 mx-42">
+        <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-3 gap-6 justify-center">
           {featuredCourses.map((course: Course) => (
             <div key={course.id} className="flex justify-center">
-              <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden w-full max-w-md">
-                <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow">
+              <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-gray-900  overflow-hidden w-full max-w-md">
+                <div className="sm:p-6 flex flex-col items-center text-center flex-grow">
                   <div className="h-36 sm:h-24 w-full flex items-center justify-center">
-                    <p className=" font-serif text-3xl sm:text-2xl text-black dark:text-neutral-200">{course.title}</p>
+                    <p className="font-bold p-4 text-3xl sm:text-2xl text-black dark:text-neutral-200">{course.title}</p>
                   </div>
                   <p className="text-sm text-neutral-600 dark:text-neutral-400 mt-4 mb-6">{course.description}</p>
                   <p className="text-purple-500">Price: ${course.price}</p>

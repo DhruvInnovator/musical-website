@@ -1,6 +1,7 @@
 import AboutPAge from "@/components/AboutPage";
 import HeroSection from "@/components/HeroSection";
 import FeaturedCourses from "@/components/ui/FeaturedCourses";
+import DataMovingCard from "@/components/carder";
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
     <HeroSection />
     <FeaturedCourses />
     <AboutPAge />
+    <DataMovingCard  />
   
     
   </main>
