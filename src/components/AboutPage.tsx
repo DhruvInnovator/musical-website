@@ -12,7 +12,7 @@ import {
 
 function AboutPage() {
   return (
-    <BentoGrid className="mt-8 max-w-fit mx-auto">
+    <BentoGrid className="mt-12 max-w-fit mx-auto">
       {items.map((item, i) => (
         <BentoGridItem
         key={i}

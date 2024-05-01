@@ -1,7 +1,10 @@
 import AboutPAge from "@/components/AboutPage";
+import InfiniteMovingCardsDemo from "@/components/DataMovingCards";
+import GridBackground from "@/components/GridBackground";
 import HeroSection from "@/components/HeroSection";
 import FeaturedCourses from "@/components/ui/FeaturedCourses";
-import DataMovingCard from "@/components/carder";
+// import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+
 
 
 export default function Home() {
@@ -11,7 +14,8 @@ export default function Home() {
     <HeroSection />
     <FeaturedCourses />
     <AboutPAge />
-    <DataMovingCard  />
+    <InfiniteMovingCardsDemo  />
+    
   
     
   </main>
