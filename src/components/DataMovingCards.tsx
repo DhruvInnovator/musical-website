@@ -46,10 +46,16 @@ const DataMovingCard =[
         },    
 ];
 
-function DataMovingCards() {
+function InfiniteMovingCardsDemo() {
   return (
-    <div>DataMovingCards</div>
+    <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+      <InfiniteMovingCards
+        items = {DataMovingCard}
+        direction = "left"
+        speed="slow"
+      />
+    </div>
   )
 }
 
-export default DataMovingCards
+export default InfiniteMovingCardsDemo
